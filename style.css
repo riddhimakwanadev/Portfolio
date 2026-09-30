@@ -1,0 +1,224 @@
+body {
+    font-family: "Segoe UI";
+  }
+  
+  /* FLOATING NAVBAR */
+.custom-nav {
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  /* NAV WRAPPER */
+  .nav-wrapper {
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(12px);
+    border-radius: 50px;
+    padding: 10px 25px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  }
+  
+  /* LOGO */
+  .logo {
+    font-weight: 700;
+    color: white !important;
+  }
+  
+  /* LINKS */
+  .nav-link {
+    color: #e2e8f0 !important;
+    margin-left: 25px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+  }
+  
+  /* HOVER EFFECT */
+  .nav-link:hover {
+    color: #38bdf8 !important;
+  }
+  
+  /* UNDERLINE */
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(90deg, #38bdf8, #f472b6);
+    transition: 0.3s;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  /* CONTACT BUTTON */
+  .contact-btn {
+    border: 1px solid #38bdf8;
+    border-radius: 20px;
+    padding: 6px 16px !important;
+  }
+  
+  /* TOGGLER ICON */
+  .toggler-icon {
+    width: 25px;
+    height: 2px;
+    background: white;
+    display: block;
+    position: relative;
+  }
+  
+  .toggler-icon::before,
+  .toggler-icon::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: white;
+    left: 0;
+  }
+  
+  .toggler-icon::before {
+    top: -7px;
+  }
+  
+  .toggler-icon::after {
+    top: 7px;
+  }
+  
+  /* MOBILE MENU */
+  @media (max-width: 991px) {
+    .nav-wrapper {
+      border-radius: 20px;
+    }
+  
+    .navbar-collapse {
+      margin-top: 15px;
+      background: #020617;
+      padding: 15px;
+      border-radius: 15px;
+    }
+  
+    .nav-link {
+      margin: 10px 0;
+    }
+  }
+  
+  /* HERO */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #0ea5e9);
+    color: white;
+  }
+  
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(90deg, #38bdf8, #f472b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Button */
+  .btn-gradient {
+    background: linear-gradient(135deg, #38bdf8, #f472b6);
+    border: none;
+    color: rgb(4, 24, 55);
+    font-weight: 600;
+    font-family: "helvetica";
+    padding: 15px 30px;
+    transition: 0.3s ease-in;
+  }
+  
+  /* Project Card */
+  /* PROJECT CARD */
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  }
+  
+  /* IMAGE */
+  .project-img img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  /* CONTENT */
+  .project-content {
+    padding: 10px;
+  }
+  
+  .project-content h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .project-content p {
+    font-size: 14px;
+    color: #555;
+  }
+  /* IMAGE CONTAINER */
+.project-img {
+    width: 100%;
+    max-width: 55%;
+    margin-bottom: 20px;
+    height: 100px;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* IMAGE FIX */
+  .project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down; /* KEY FIX */
+    transition: 0.4s;
+  }
+  
+  /* HOVER ZOOM */
+  .project-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* TAGS */
+  .tags {
+    margin: 10px 0;
+  }
+  
+  .tags span {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  
+  /* BUTTON */
+  .project-links{
+    margin-top: 20px;
+  }
+  .project-links a {
+    border-radius: 20px;
+  }
+  
+  /* Form */
+  form input, form textarea {
+    max-width: 500px;
+    margin: auto;
+  }
