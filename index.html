@@ -19,7 +19,7 @@
 <nav class="navbar navbar-expand-lg custom-nav">
     <div class="container nav-wrapper">
   
-      <a class="navbar-brand logo" href="#">Riddhi Makwana</a>
+      <a class="navbar-brand logo" href="#">Riddhi <span class="gradient-text">Makwana</span></a>
   
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="toggler-icon"></span>
@@ -30,7 +30,7 @@
           <li><a class="nav-link" href="#home">Home</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
           <li><a class="nav-link" href="#projects">Work</a></li>
-          <li><a class="nav-link contact-btn" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
   
@@ -39,112 +39,47 @@
 
 <!-- HERO -->
 <section id="home" class="hero d-flex align-items-center text-center">
-  <div class="container" data-aos="fade-up">
-    <h1 class="display-4 fw-bold">Hi, I'm Riddhi Makwana</h1>
-    <h2 class="gradient-text">Frontend & WordPress Developer</h2>
-    <p>Frontend & WordPress Developer with 4+ years experience building responsive business websites.</p>
 
-    <a href="#projects" class="btn btn-gradient mt-3">View My Work</a>
+  <div class="hero-bg" aria-hidden="true">
+    <span class="hero-blob hero-blob-1"></span>
+    <span class="hero-blob hero-blob-2"></span>
+    <span class="hero-grid"></span>
   </div>
-</section>
 
-<!-- PROJECTS -->
-<section id="projects" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-5">Projects</h2>
+  <div class="container" data-aos="fade-up">
+    <span class="hero-badge">Available for freelance work</span>
 
-    <div class="row g-4">
+    <h1 class="display-3 fw-bold hero-title">Hi, I'm <span class="gradient-text">Riddhi Makwana</span></h1>
 
-        <!-- PROJECT 1 -->
-        <div class="col-md-6 col-lg-4" data-aos="zoom-in">
-          <div class="project-card">
-      
-            <div class="project-img">
-              <img src="images/dataaiml.jpeg" alt="DataAIML" />
-            </div>
-      
-            <div class="project-content">
-              <h5>DataAIML Cloud</h5>
-      
-              <p>
-                AI & Data platform website focused on analytics, ML, and cloud solutions.
-              </p>
-      
-              <div class="tags">
-                <span>WordPress</span>
-              </div>
-      
-              <div class="project-links">
-                <a href="https://dataaiml.cloud/" target="_blank" class="btn btn-sm btn-primary">Live</a>
-              </div>
-      
-            </div>
-      
-          </div>
-        </div>
-      
-        <!-- PROJECT 2 -->
-        <div class="col-md-6 col-lg-4" data-aos="zoom-in">
-          <div class="project-card">
-      
-            <div class="project-img">
-              <img src="images/pluspromotions.png" alt="Plus Promotions" />
-            </div>
-      
-            <div class="project-content">
-              <h5>Plus Promotions</h5>
-      
-              <p>
-                Partnership-focused landing page designed for conversions and business growth.
-              </p>
-      
-              <div class="tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JS</span>
-              </div>
-      
-              <div class="project-links">
-                <a href="https://pluspromotions.ie/partner-with-us" target="_blank" class="btn btn-sm btn-primary">Live</a>
-              </div>
-      
-            </div>
-      
-          </div>
-        </div>
+    <h2 class="hero-subtitle"><span id="typeText"></span><span class="type-caret"></span></h2>
 
-        <!-- PROJECT 3 -->
-        <div class="col-md-6 col-lg-4" data-aos="zoom-in">
-            <div class="project-card">
-        
-                <div class="project-img">
-                <img src="images/lerma-wines-logo.png" alt="Plus Promotions" />
-                </div>
-        
-                <div class="project-content">
-                <h5>Lerma Wines</h5>
-        
-                <p>
-                    Designed an elegant winery website showcasing heritage, premium wines, and 
-                    vineyard storytelling with a modern responsive UI.
-                </p>
-        
-                <div class="tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JS</span>
-                </div>
-        
-                <div class="project-links">
-                    <a href="https://www.lermawines.com/" target="_blank" class="btn btn-sm btn-primary">Live</a>
-                </div>
-        
-                </div>
-        
-            </div>
-        </div>
-      
+    <p class="hero-desc">
+      I build modern, responsive business websites with a strong focus on
+      clean UI, performance and user experience.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-gradient">View My Work</a>
+      <a href="#contact" class="btn btn-ghost">Contact Me</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <strong>4+</strong>
+        <span>Years Experience</span>
       </div>
+      <div class="stat">
+        <strong>100%</strong>
+        <span>Responsive Design</span>
+      </div>
+      <div class="stat">
+        <strong>Fast</strong>
+        <span>Performance Focused</span>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-indicator" aria-label="Scroll down"><span></span></a>
 </section>
 
 <!-- ABOUT -->
@@ -210,25 +145,264 @@
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="py-5 text-center">
-  <div class="container" data-aos="fade-up">
-    <h2>Contact Me</h2>
+<!-- PROJECTS -->
+<section id="projects" class="py-5 projects-section">
+  <div class="container">
 
-    <form id="contactForm" class="mt-4">
-      <input type="text" name="name" placeholder="Your Name" required class="form-control mb-3">
-      <input type="email" name="email" placeholder="Your Email" required class="form-control mb-3">
-      <textarea name="message" placeholder="Your Message" required class="form-control mb-3"></textarea>
+    <div class="section-head text-center" data-aos="fade-up">
+      <span class="section-badge">My Work</span>
+      <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      <p class="section-sub">A selection of websites I've designed and developed for real businesses.</p>
+    </div>
 
-      <button type="submit" class="btn btn-gradient">Send Message</button>
-    </form>
+    <div class="projects-slider">
 
-    <p id="formMsg" class="mt-3"></p>
+      <button class="slider-btn slider-prev" type="button" aria-label="Previous project">&#10094;</button>
+
+      <div class="slider-viewport">
+        <div class="slider-track">
+
+          <!-- PROJECT 1 -->
+          <div class="slider-slide">
+            <div class="project-card">
+
+              <div class="project-img">
+                <img src="images/dataaiml.jpeg" alt="DataAIML Cloud" />
+                <span class="project-index">01</span>
+              </div>
+
+              <div class="project-content">
+                <h5>DataAIML Cloud</h5>
+
+                <p>
+                  AI & Data platform website focused on analytics, ML, and cloud solutions.
+                </p>
+
+                <div class="tags">
+                  <span>WordPress</span>
+                </div>
+
+                <div class="project-links">
+                  <a href="https://dataaiml.cloud/" target="_blank" rel="noopener" class="live-link">Live Demo <span>&rarr;</span></a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PROJECT 2 -->
+          <div class="slider-slide">
+            <div class="project-card">
+
+              <div class="project-img">
+                <img src="images/pluspromotions.png" alt="Plus Promotions" />
+                <span class="project-index">02</span>
+              </div>
+
+              <div class="project-content">
+                <h5>Plus Promotions</h5>
+
+                <p>
+                  Partnership-focused landing page designed for conversions and business growth.
+                </p>
+
+                <div class="tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+                </div>
+
+                <div class="project-links">
+                  <a href="https://pluspromotions.ie/partner-with-us" target="_blank" rel="noopener" class="live-link">Live Demo <span>&rarr;</span></a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PROJECT 3 -->
+          <div class="slider-slide">
+            <div class="project-card">
+
+              <div class="project-img">
+                <img src="images/lerma-wines-logo.png" alt="Lerma Wines" />
+                <span class="project-index">03</span>
+              </div>
+
+              <div class="project-content">
+                <h5>Lerma Wines</h5>
+
+                <p>
+                  Designed an elegant winery website showcasing heritage, premium wines, and
+                  vineyard storytelling with a modern responsive UI.
+                </p>
+
+                <div class="tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+                </div>
+
+                <div class="project-links">
+                  <a href="https://www.lermawines.com/" target="_blank" rel="noopener" class="live-link">Live Demo <span>&rarr;</span></a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="slider-btn slider-next" type="button" aria-label="Next project">&#10095;</button>
+
+      <div class="slider-dots" role="tablist"></div>
+
+    </div>
   </div>
 </section>
 
-<footer class="text-center py-3 bg-dark text-light">
-  © 2026 Riddhi Makwana
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="container">
+
+    <div class="contact-panel">
+
+      <!-- LEFT: GRADIENT PANEL -->
+      <div class="contact-info" data-aos="fade-right">
+        <span class="contact-badge">Contact</span>
+        <h2 class="contact-title">Let's build something <span class="gradient-text">great</span> together</h2>
+        <p class="contact-text">
+          Have a project in mind or just want to say hello? Reach out directly —
+          I usually reply within 24 hours.
+        </p>
+
+        <div class="contact-methods">
+          <a href="mailto:riddhi@example.com" class="method">
+            <span class="method-icon">✉️</span>
+            <div>
+              <small>Email</small>
+              <p>riddhi@example.com</p>
+            </div>
+          </a>
+
+          <div class="method">
+            <span class="method-icon">📍</span>
+            <div>
+              <small>Location</small>
+              <p>Gujarat, India</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="contact-note">Open for freelance &amp; full-time opportunities</p>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div class="contact-form-wrap" data-aos="fade-left">
+        <h5>Send me a message</h5>
+
+        <form id="contactForm" class="animated-form">
+          <div class="row g-3">
+            <div class="col-md-6 form-item">
+              <label class="visually-hidden" for="cf-name">Your Name</label>
+              <input id="cf-name" type="text" name="name" placeholder="Your Name" required class="form-control">
+            </div>
+            <div class="col-md-6 form-item">
+              <label class="visually-hidden" for="cf-email">Your Email</label>
+              <input id="cf-email" type="email" name="email" placeholder="Your Email" required class="form-control">
+            </div>
+            <div class="col-md-6 form-item">
+              <label class="visually-hidden" for="cf-phone">Your Phone</label>
+              <input id="cf-phone" type="tel" name="phone" placeholder="Your Phone" class="form-control">
+            </div>
+            <div class="col-md-6 form-item">
+              <label class="visually-hidden" for="cf-subject">Your Subject</label>
+              <input id="cf-subject" type="text" name="subject" placeholder="Your Subject" class="form-control">
+            </div>
+            <div class="col-md-6 form-item">
+              <label class="visually-hidden" for="cf-service">Your Service</label>
+              <div class="cs-dropdown">
+                <div class="cs-control" tabindex="0" role="button" aria-haspopup="listbox" aria-expanded="false">
+                  <span class="cs-placeholder">Your Service</span>
+                  <span class="cs-arrow"></span>
+                </div>
+                <ul class="cs-list" role="listbox">
+                  <li class="cs-option" data-value="New Website">New Website</li>
+                  <li class="cs-option" data-value="WordPress Development">WordPress Development</li>
+                  <li class="cs-option" data-value="Website Redesign">Website Redesign</li>
+                  <li class="cs-option" data-value="UI / UX Design">UI / UX Design</li>
+                  <li class="cs-option" data-value="Other">Other</li>
+                </ul>
+                <select id="cf-service" name="service" class="cs-native">
+                  <option value="" selected disabled>Your Service</option>
+                  <option value="New Website">New Website</option>
+                  <option value="WordPress Development">WordPress Development</option>
+                  <option value="Website Redesign">Website Redesign</option>
+                  <option value="UI / UX Design">UI / UX Design</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6 form-item">
+              <label class="visually-hidden" for="cf-budget">Your Budget</label>
+              <div class="cs-dropdown">
+                <div class="cs-control" tabindex="0" role="button" aria-haspopup="listbox" aria-expanded="false">
+                  <span class="cs-placeholder">Your Budget</span>
+                  <span class="cs-arrow"></span>
+                </div>
+                <ul class="cs-list" role="listbox">
+                  <li class="cs-option" data-value="Under $500">Under $500</li>
+                  <li class="cs-option" data-value="$500 - $1,000">$500 - $1,000</li>
+                  <li class="cs-option" data-value="$1,000 - $3,000">$1,000 - $3,000</li>
+                  <li class="cs-option" data-value="$3,000+">$3,000+</li>
+                </ul>
+                <select id="cf-budget" name="budget" class="cs-native">
+                  <option value="" selected disabled>Your Budget</option>
+                  <option value="Under $500">Under $500</option>
+                  <option value="$500 - $1,000">$500 - $1,000</option>
+                  <option value="$1,000 - $3,000">$1,000 - $3,000</option>
+                  <option value="$3,000+">$3,000+</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 form-item">
+              <label class="visually-hidden" for="cf-message">Your Message</label>
+              <textarea id="cf-message" name="message" rows="5" placeholder="Your Message" required class="form-control"></textarea>
+            </div>
+            <div class="col-12 form-item">
+              <button type="submit" class="btn btn-gradient w-100">Send Message</button>
+              <p id="formMsg" class="mt-3 mb-0 text-center"></p>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <span class="footer-brand">Riddhi <span class="gradient-text">Makwana</span></span>
+
+    <ul class="footer-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <span class="footer-copy">© 2026 Riddhi Makwana</span>
+
+  </div>
+
+  <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
 </footer>
 
 <!-- Scripts -->
