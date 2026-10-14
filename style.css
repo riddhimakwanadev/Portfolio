@@ -170,6 +170,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
   }
   
   .brand {
@@ -257,11 +258,21 @@
     background: #fff;
     left: 0;
   }
-  .navbar-toggler{
+  .navbar-toggler {
     border: none !important;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
   }
-  .navbar-toggler:focus{
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
     box-shadow: none;
+    outline: none;
   }
   
   .toggler-icon::before { top: -7px; }
@@ -272,7 +283,8 @@
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 16px;
     padding: 16px;
-    margin-top: 14px;
+    margin-top: 10px;
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.45);
   }
   
   @media (min-width: 992px) {
