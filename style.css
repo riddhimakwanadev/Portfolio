@@ -257,6 +257,12 @@
     background: #fff;
     left: 0;
   }
+  .navbar-toggler{
+    border: none !important;
+  }
+  .navbar-toggler:focus{
+    box-shadow: none;
+  }
   
   .toggler-icon::before { top: -7px; }
   .toggler-icon::after  { top: 7px; }
