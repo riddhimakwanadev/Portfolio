@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>      
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Riddhi Makwana | Portfolio</title>
-      
+  <title>Riddhi Makwana | Frontend Developer & Web Designer</title>
+
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -14,244 +14,323 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg custom-nav">
-    <div class="container nav-wrapper">
-  
-      <a class="navbar-brand logo" href="#">Riddhi <span class="gradient-text">Makwana</span></a>
-  
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto align-items-center">
-          <li><a class="nav-link" href="#home">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#projects">Work</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-  
+<nav class="navbar navbar-expand-lg site-nav">
+  <div class="container nav-inner">
+
+    <a class="navbar-brand brand" href="#home">
+      <span class="brand-mark">RM</span>
+      <span class="brand-name">Riddhi Makwana</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+            aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center nav-menu">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#projects">Work</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="d-lg-none mt-2 mb-1"><a class="btn btn-solid w-100 justify-content-center" href="#contact">Hire Me</a></li>
+      </ul>
     </div>
-  </nav>
+
+    <a class="btn btn-solid nav-cta d-none d-lg-inline-flex" href="#contact">Hire Me</a>
+
+  </div>
+</nav>
 
 <!-- HERO -->
-<section id="home" class="hero d-flex align-items-center text-center">
-
+<section id="home" class="hero">
   <div class="hero-bg" aria-hidden="true">
-    <span class="hero-blob hero-blob-1"></span>
-    <span class="hero-blob hero-blob-2"></span>
-    <span class="hero-grid"></span>
+    <span class="glow glow-1"></span>
+    <span class="glow glow-2"></span>
+    <span class="hero-grid-lines"></span>
+    <span class="hero-ring ring-1"><i></i></span>
+    <span class="hero-ring ring-2"><i></i></span>
   </div>
 
-  <div class="container" data-aos="fade-up">
-    <span class="hero-badge">Available for freelance work</span>
+  <div class="container hero-inner">
 
-    <h1 class="display-3 fw-bold hero-title">Hi, I'm <span class="gradient-text">Riddhi Makwana</span></h1>
+    <div class="hero-copy">
+      <span class="eyebrow hero-eyebrow"><i class="pulse-dot"></i>Available for freelance</span>
 
-    <h2 class="hero-subtitle"><span id="typeText"></span><span class="type-caret"></span></h2>
+      <h1 class="hero-title">
+        <span class="title-line"><span class="line-inner">I design &amp; build</span></span>
+        <span class="title-line"><span class="line-inner gradient-text">web experiences</span></span>
+        <span class="title-line"><span class="line-inner">that actually convert.</span></span>
+      </h1>
 
-    <p class="hero-desc">
-      I build modern, responsive business websites with a strong focus on
-      clean UI, performance and user experience.
-    </p>
+      <p class="hero-role"><span id="typeText" class="gradient-text"></span><span class="type-caret"></span></p>
 
-    <div class="hero-cta">
-      <a href="#projects" class="btn btn-gradient">View My Work</a>
-      <a href="#contact" class="btn btn-ghost">Contact Me</a>
-    </div>
+      <p class="hero-desc">
+        I craft fast, responsive and accessible websites with modern frontend
+        tech — from first wireframe to launch and beyond.
+      </p>
 
-    <div class="hero-stats">
-      <div class="stat">
-        <strong>4+</strong>
-        <span>Years Experience</span>
-      </div>
-      <div class="stat">
-        <strong>100%</strong>
-        <span>Responsive Design</span>
-      </div>
-      <div class="stat">
-        <strong>Fast</strong>
-        <span>Performance Focused</span>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-solid">View Selected Work</a>
+        <a href="#contact" class="btn btn-outline">Start a Project</a>
       </div>
     </div>
+
+    <aside class="hero-aside">
+      <div class="profile-card">
+        <div class="pc-head">
+          <span class="pc-avatar">RM</span>
+          <div class="pc-meta">
+            <strong>Riddhi Makwana</strong>
+            <small>Frontend Developer &amp; Web Designer</small>
+          </div>
+        </div>
+
+        <div class="pc-grid">
+          <div class="pc-cell"><b>4+</b><span>Years exp.</span></div>
+          <div class="pc-cell"><b>24h</b><span>Reply time</span></div>
+          <div class="pc-cell"><b>UI</b><span>Design first</span></div>
+          <div class="pc-cell"><b>React</b><span>Modern stack</span></div>
+        </div>
+
+        <div class="pc-foot"><i class="pulse-dot"></i> Open to new projects</div>
+      </div>
+
+      <div class="quote-card">
+        <p>&ldquo;Clean code, clear communication, on-time delivery.&rdquo;</p>
+      </div>
+    </aside>
+
   </div>
 
-  <a href="#about" class="scroll-indicator" aria-label="Scroll down"><span></span></a>
+  <a href="#about" class="scroll-hint" aria-label="Scroll down to about section">
+    <span class="mouse"><span class="wheel"></span></span>
+    <span>Scroll</span>
+  </a>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>React JS</span><i>&bull;</i><span>Vite</span><i>&bull;</i><span>JavaScript ES6+</span><i>&bull;</i>
+      <span>Component-Based UI</span><i>&bull;</i><span>API Integration</span><i>&bull;</i>
+      <span>Responsive Design</span><i>&bull;</i><span>WordPress</span><i>&bull;</i><span>Git &amp; GitHub</span><i>&bull;</i>
+      <span>React JS</span><i>&bull;</i><span>Vite</span><i>&bull;</i><span>JavaScript ES6+</span><i>&bull;</i>
+      <span>Component-Based UI</span><i>&bull;</i><span>API Integration</span><i>&bull;</i>
+      <span>Responsive Design</span><i>&bull;</i><span>WordPress</span><i>&bull;</i><span>Git &amp; GitHub</span><i>&bull;</i>
+    </div>
+  </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="about-section">
+<section id="about" class="about">
   <div class="container">
-    <div class="row align-items-center g-5">
 
-      <!-- LEFT: INTRO -->
-      <div class="col-lg-6" data-aos="fade-right">
-        <span class="about-badge">Get to know me</span>
-        <h2 class="about-title">About <span class="gradient-text">Me</span></h2>
+    <div class="split-head" data-aos="fade-up">
+      <div>
+        <span class="eyebrow eyebrow-dark">About me</span>
+        <h2 class="section-title">A developer who<br>cares about the <span class="gradient-text">details</span>.</h2>
+      </div>
+      <p class="head-note">
+        I turn briefs into polished, production-ready websites — balancing
+        aesthetics, performance and usability on every screen size.
+      </p>
+    </div>
 
-        <p class="about-text">
-          I'm a Frontend &amp; WordPress Developer with <strong>4+ years</strong> of experience
-          building modern, responsive websites with a strong focus on clean UI,
-          accessibility and performance.
+    <div class="about-body">
+      <div class="about-lead" data-aos="fade-right">
+        <p class="lead-text">
+          I'm a <strong>Frontend Developer &amp; Web Designer</strong> with
+          <strong>4+ years</strong> of experience building modern, responsive
+          websites with a focus on clean UI, accessibility and performance.
         </p>
 
-        <div class="about-tags">
-          <span>HTML5</span>
-          <span>CSS3</span>
-          <span>JavaScript</span>
-          <span>Bootstrap</span>
-          <span>WordPress</span>
-          <span>Responsive Design</span>
-        </div>
+        <ul class="skill-chips">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript ES6+</li>
+          <li>React JS</li>
+          <li>Vite</li>
+          <li>Component-Based UI Development</li>
+          <li>Responsive React UI</li>
+          <li>API Integration &mdash; Fetch / Axios</li>
+          <li>Git &amp; GitHub</li>
+          <li>Bootstrap</li>
+          <li>WordPress</li>
+          <li>Responsive Design</li>
+        </ul>
 
-        <a href="#contact" class="btn btn-gradient mt-4">Let's Work Together</a>
+        <a href="#contact" class="btn btn-solid mt-4">Let's Work Together</a>
       </div>
 
-      <!-- RIGHT: CARDS -->
-      <div class="col-lg-6" data-aos="fade-left">
-        <div class="about-grid">
-
-          <div class="about-card">
-            <div class="about-icon">🚀</div>
-            <h5>4+ Years Experience</h5>
-            <p>Delivering production-ready websites for global clients.</p>
+      <ol class="value-list" data-aos="fade-left">
+        <li>
+          <span class="vl-num">01</span>
+          <div>
+            <h5>Product thinking</h5>
+            <p>Every layout starts from the user's goal, not from decoration.</p>
           </div>
-
-          <div class="about-card">
-            <div class="about-icon">🎨</div>
-            <h5>UI Focused</h5>
-            <p>Clean, modern interfaces that users enjoy interacting with.</p>
+        </li>
+        <li>
+          <span class="vl-num">02</span>
+          <div>
+            <h5>Design with intent</h5>
+            <p>Consistent type, spacing and colour systems that scale.</p>
           </div>
-
-          <div class="about-card">
-            <div class="about-icon">⚡</div>
-            <h5>Fast &amp; Responsive</h5>
-            <p>Optimised for every screen size and fast load times.</p>
+        </li>
+        <li>
+          <span class="vl-num">03</span>
+          <div>
+            <h5>Fast, accessible builds</h5>
+            <p>Semantic markup, responsive images and sensible loading.</p>
           </div>
-
-          <div class="about-card">
-            <div class="about-icon">🤝</div>
-            <h5>Reliable Support</h5>
-            <p>Clear communication and handover after every project.</p>
+        </li>
+        <li>
+          <span class="vl-num">04</span>
+          <div>
+            <h5>Reliable handover</h5>
+            <p>Clear communication, documentation and post-launch support.</p>
           </div>
-
-        </div>
-      </div>
-
+        </li>
+      </ol>
     </div>
+
+    <div class="stats-strip" data-aos="fade-up">
+      <div class="strip-cell"><b>4+</b><span>Years of experience</span></div>
+      <div class="strip-cell"><b>100%</b><span>Responsive delivery</span></div>
+      <div class="strip-cell"><b>24h</b><span>Average reply time</span></div>
+      <div class="strip-cell"><b>100%</b><span>Hand-coded UI</span></div>
+    </div>
+
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="py-5 projects-section">
+<section id="projects" class="projects">
   <div class="container">
 
-    <div class="section-head text-center" data-aos="fade-up">
-      <span class="section-badge">My Work</span>
-      <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-      <p class="section-sub">A selection of websites I've designed and developed for real businesses.</p>
+    <div class="split-head" data-aos="fade-up">
+      <div>
+        <span class="eyebrow eyebrow-dark">Selected work</span>
+        <h2 class="section-title">Real work, <span class="gradient-text">real results</span>.</h2>
+      </div>
+      <p class="head-note">
+        A small selection of websites designed and developed for real
+        businesses — live, responsive and results-driven.
+      </p>
     </div>
 
-    <div class="projects-slider">
+    <div class="projects-slider" data-aos="fade-up">
 
       <button class="slider-btn slider-prev" type="button" aria-label="Previous project">&#10094;</button>
 
       <div class="slider-viewport">
         <div class="slider-track">
 
-          <!-- PROJECT 1 -->
           <div class="slider-slide">
-            <div class="project-card">
-
-              <div class="project-img">
-                <img src="images/dataaiml.jpeg" alt="DataAIML Cloud" />
-                <span class="project-index">01</span>
+            <article class="work-card">
+              <div class="work-body">
+                <ul class="work-tags"><li>WordPress</li></ul>
+                <h3>DataAIML Cloud</h3>
+                <p>Developed a responsive website for DataAIML Cloud, showcasing data analytics, artificial intelligence, machine learning, and cloud computing solutions. Focused on clean UI design, user-friendly navigation, and presenting technology services effectively.</p>
+                <a href="https://dataaiml.cloud/" target="_blank" rel="noopener" class="work-link">Live Demo <span>&rarr;</span></a>
               </div>
-
-              <div class="project-content">
-                <h5>DataAIML Cloud</h5>
-
-                <p>
-                  AI & Data platform website focused on analytics, ML, and cloud solutions.
-                </p>
-
-                <div class="tags">
-                  <span>WordPress</span>
-                </div>
-
-                <div class="project-links">
-                  <a href="https://dataaiml.cloud/" target="_blank" rel="noopener" class="live-link">Live Demo <span>&rarr;</span></a>
-                </div>
-
-              </div>
-
-            </div>
+            </article>
           </div>
 
-          <!-- PROJECT 2 -->
           <div class="slider-slide">
-            <div class="project-card">
-
-              <div class="project-img">
-                <img src="images/pluspromotions.png" alt="Plus Promotions" />
-                <span class="project-index">02</span>
+            <article class="work-card">
+              <div class="work-body">
+                <ul class="work-tags"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+                <h3>Plus Promotions</h3>
+                <p>Developed a responsive website for Plus Promotions, showcasing promotional products, branding solutions, and marketing services. Focused on attractive UI design, user-friendly navigation, and presenting products and services effectively.</p>
+                <a href="https://pluspromotions.ie/partner-with-us" target="_blank" rel="noopener" class="work-link">Live Demo <span>&rarr;</span></a>
               </div>
-
-              <div class="project-content">
-                <h5>Plus Promotions</h5>
-
-                <p>
-                  Partnership-focused landing page designed for conversions and business growth.
-                </p>
-
-                <div class="tags">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JS</span>
-                </div>
-
-                <div class="project-links">
-                  <a href="https://pluspromotions.ie/partner-with-us" target="_blank" rel="noopener" class="live-link">Live Demo <span>&rarr;</span></a>
-                </div>
-
-              </div>
-
-            </div>
+            </article>
           </div>
 
-          <!-- PROJECT 3 -->
           <div class="slider-slide">
-            <div class="project-card">
-
-              <div class="project-img">
-                <img src="images/lerma-wines-logo.png" alt="Lerma Wines" />
-                <span class="project-index">03</span>
+            <article class="work-card">
+              <div class="work-body">
+                <ul class="work-tags"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+                <h3>Lerma Wines</h3>
+                <p>Developed an elegant, responsive winery website showcasing heritage, premium wines, and vineyard storytelling. Focused on sophisticated UI design, engaging visuals, and a seamless browsing experience across devices.</p>
+                <a href="https://www.lermawines.com/" target="_blank" rel="noopener" class="work-link">Live Demo <span>&rarr;</span></a>
               </div>
+            </article>
+          </div>
 
-              <div class="project-content">
-                <h5>Lerma Wines</h5>
-
-                <p>
-                  Designed an elegant winery website showcasing heritage, premium wines, and
-                  vineyard storytelling with a modern responsive UI.
-                </p>
-
-                <div class="tags">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JS</span>
-                </div>
-
-                <div class="project-links">
-                  <a href="https://www.lermawines.com/" target="_blank" rel="noopener" class="live-link">Live Demo <span>&rarr;</span></a>
-                </div>
-
+          <div class="slider-slide">
+            <article class="work-card">
+              <div class="work-body">
+                <ul class="work-tags"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+                <h3>Alternative Energy</h3>
+                <p>Developed a responsive website for Alternative Energy, showcasing solar PV systems, battery storage, and EV charging solutions. Focused on clean UI design, user-friendly navigation, and presenting renewable energy services for residential and commercial customers.</p>
+                <a href="https://alternativeenergy.ie/" target="_blank" rel="noopener" class="work-link">Live Demo <span>&rarr;</span></a>
               </div>
+            </article>
+          </div>
 
-            </div>
+          <div class="slider-slide">
+            <article class="work-card">
+              <div class="work-body">
+                <ul class="work-tags"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+                <h3>Trueleads</h3>
+                <p>Developed a responsive website for Trueleads, a B2B social selling and lead generation platform focused on LinkedIn personal branding and content marketing. Designed user-friendly pages to showcase services that help businesses build professional relationships and generate qualified leads.</p>
+                <a href="https://trueleads.com/" target="_blank" rel="noopener" class="work-link">Live Demo <span>&rarr;</span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="slider-slide">
+            <article class="work-card">
+              <div class="work-body">
+                <ul class="work-tags"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+                <h3>Get Healthcare</h3>
+                <p>Developed a responsive website for Get Healthcare, providing online healthcare services, GP consultations, and medical certificate applications. Focused on user-friendly navigation, service accessibility, and a seamless experience across desktop and mobile devices.</p>
+                <a href="https://gethealthcare.ie/" target="_blank" rel="noopener" class="work-link">Live Demo <span>&rarr;</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="slider-slide">
+            <article class="work-card">
+              <div class="work-body">
+                <ul class="work-tags"><li>Wordpress</li></ul>
+                <h3>Boxedstorage</h3>
+                <p>Developed a responsive website for Boxed Storage, offering secure and flexible self-storage solutions for residential and commercial customers. Focused on user-friendly navigation, service presentation, storage options, and convenient customer enquiries.</p>
+                <a href="https://boxedstorage.ie/" target="_blank" rel="noopener" class="work-link">Live Demo <span>&rarr;</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="slider-slide">
+            <article class="work-card">
+              <div class="work-body">
+                <ul class="work-tags"><li>Wordpress</li></ul>
+                <h3>Kilroeplanthire</h3>
+                <p>Developed a responsive website for Kilroe Plant Hire, showcasing plant and machinery hire services, equipment rentals, and robotic lawn mower solutions. Focused on user-friendly navigation, service presentation, and convenient customer enquiry options.</p>
+                <a href="https://kilroeplanthire.com/" target="_blank" rel="noopener" class="work-link">Live Demo <span>&rarr;</span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="slider-slide">
+            <article class="work-card">
+              <div class="work-body">
+                <ul class="work-tags"><li>Wordpress</li></ul>
+                <h3>Penyfaiciw Primary</h3>
+                <p>Developed a responsive website for Penyfaiciw Primary School, presenting school information, educational activities, news, and important updates for parents and students. Focused on user-friendly navigation, accessible content, and a clean, engaging design.</p>
+                <a href="https://penyfaiciwprimary.co.uk/" target="_blank" rel="noopener" class="work-link">Live Demo <span>&rarr;</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="slider-slide">
+            <article class="work-card">
+              <div class="work-body">
+                <ul class="work-tags"><li>Wordpress</li></ul>
+                <h3>Macfay Automation</h3>
+                <p>Developed a responsive website for MacFaye Automation, showcasing industrial automation solutions and engineering services. Focused on professional UI design, clear service presentation, user-friendly navigation, and cross-device compatibility.</p>
+                <a href="https://penyfaiciwprimary.co.uk/" target="_blank" rel="noopener" class="work-link">Live Demo <span>&rarr;</span></a>
+              </div>
+            </article>
           </div>
 
         </div>
@@ -262,147 +341,112 @@
       <div class="slider-dots" role="tablist"></div>
 
     </div>
+
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact-section">
-  <div class="container">
+<section id="contact" class="contact">
+  <div class="contact-glow" aria-hidden="true"></div>
 
-    <div class="contact-panel">
+  <div class="container contact-grid">
 
-      <!-- LEFT: GRADIENT PANEL -->
-      <div class="contact-info" data-aos="fade-right">
-        <span class="contact-badge">Contact</span>
-        <h2 class="contact-title">Let's build something <span class="gradient-text">great</span> together</h2>
-        <p class="contact-text">
-          Have a project in mind or just want to say hello? Reach out directly —
-          I usually reply within 24 hours.
-        </p>
+    <div class="contact-left" data-aos="fade-right">
+      <span class="eyebrow">Contact</span>
+      <h2 class="contact-title">Let's build<br>something <span class="gradient-text">great</span>.</h2>
+      <p class="contact-desc">
+        Have a project in mind, or just want to say hello? Fill in the form
+        or reach out directly — I usually reply within 24 hours.
+      </p>
 
-        <div class="contact-methods">
-          <a href="mailto:riddhi@example.com" class="method">
-            <span class="method-icon">✉️</span>
-            <div>
-              <small>Email</small>
-              <p>riddhi@example.com</p>
-            </div>
-          </a>
+      <ul class="contact-rows">
+        <li>
+          <span class="cr-key">Email</span>
+          <a href="mailto:riddhimakwana.dev@gmail.com">riddhimakwana.dev@gmail.com</a>
+        </li>
+        <li>
+          <span class="cr-key">Location</span>
+          <span>Gujarat, India</span>
+        </li>
+        <li>
+          <span class="cr-key">Status</span>
+          <span><i class="pulse-dot"></i> Open for freelance &amp; full-time</span>
+        </li>
+      </ul>
+    </div>
 
-          <div class="method">
-            <span class="method-icon">📍</span>
-            <div>
-              <small>Location</small>
-              <p>Gujarat, India</p>
-            </div>
+    <div class="contact-card" data-aos="fade-left">
+      <h3>Send a message</h3>
+
+      <form id="contactForm" class="animated-form">
+        <div class="row g-3">
+          <div class="col-md-6 form-item">
+            <label class="visually-hidden" for="cf-name">Full name</label>
+            <input id="cf-name" type="text" name="name" placeholder="Full name" required class="form-control">
+          </div>
+          <div class="col-md-6 form-item">
+            <label class="visually-hidden" for="cf-company">Company name</label>
+            <input id="cf-company" type="text" name="company" placeholder="Company name" class="form-control">
+          </div>
+          <div class="col-md-6 form-item">
+            <label class="visually-hidden" for="cf-email">Email address</label>
+            <input id="cf-email" type="email" name="email" placeholder="Email address" required class="form-control">
+          </div>
+          <div class="col-md-6 form-item">
+            <label class="visually-hidden" for="cf-phone">Phone number</label>
+            <input id="cf-phone" type="tel" name="phone" placeholder="Phone number" class="form-control">
+          </div>
+          <div class="col-12 form-item">
+            <label class="visually-hidden" for="cf-subject">Subject</label>
+            <input id="cf-subject" type="text" name="subject" placeholder="Subject" class="form-control">
+          </div>
+          <div class="col-12 form-item">
+            <label class="visually-hidden" for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5"
+                      placeholder="Tell me about your project, goals and any ideas you have..."
+                      required class="form-control"></textarea>
+          </div>
+          <div class="col-12 form-item">
+            <button type="submit" class="btn btn-solid w-100">Send Message</button>
+            <p id="formMsg" class="form-msg mt-3 mb-0 text-center"></p>
           </div>
         </div>
-
-        <p class="contact-note">Open for freelance &amp; full-time opportunities</p>
-      </div>
-
-      <!-- RIGHT: FORM -->
-      <div class="contact-form-wrap" data-aos="fade-left">
-        <h5>Send me a message</h5>
-
-        <form id="contactForm" class="animated-form">
-          <div class="row g-3">
-            <div class="col-md-6 form-item">
-              <label class="visually-hidden" for="cf-name">Your Name</label>
-              <input id="cf-name" type="text" name="name" placeholder="Your Name" required class="form-control">
-            </div>
-            <div class="col-md-6 form-item">
-              <label class="visually-hidden" for="cf-email">Your Email</label>
-              <input id="cf-email" type="email" name="email" placeholder="Your Email" required class="form-control">
-            </div>
-            <div class="col-md-6 form-item">
-              <label class="visually-hidden" for="cf-phone">Your Phone</label>
-              <input id="cf-phone" type="tel" name="phone" placeholder="Your Phone" class="form-control">
-            </div>
-            <div class="col-md-6 form-item">
-              <label class="visually-hidden" for="cf-subject">Your Subject</label>
-              <input id="cf-subject" type="text" name="subject" placeholder="Your Subject" class="form-control">
-            </div>
-            <div class="col-md-6 form-item">
-              <label class="visually-hidden" for="cf-service">Your Service</label>
-              <div class="cs-dropdown">
-                <div class="cs-control" tabindex="0" role="button" aria-haspopup="listbox" aria-expanded="false">
-                  <span class="cs-placeholder">Your Service</span>
-                  <span class="cs-arrow"></span>
-                </div>
-                <ul class="cs-list" role="listbox">
-                  <li class="cs-option" data-value="New Website">New Website</li>
-                  <li class="cs-option" data-value="WordPress Development">WordPress Development</li>
-                  <li class="cs-option" data-value="Website Redesign">Website Redesign</li>
-                  <li class="cs-option" data-value="UI / UX Design">UI / UX Design</li>
-                  <li class="cs-option" data-value="Other">Other</li>
-                </ul>
-                <select id="cf-service" name="service" class="cs-native">
-                  <option value="" selected disabled>Your Service</option>
-                  <option value="New Website">New Website</option>
-                  <option value="WordPress Development">WordPress Development</option>
-                  <option value="Website Redesign">Website Redesign</option>
-                  <option value="UI / UX Design">UI / UX Design</option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-md-6 form-item">
-              <label class="visually-hidden" for="cf-budget">Your Budget</label>
-              <div class="cs-dropdown">
-                <div class="cs-control" tabindex="0" role="button" aria-haspopup="listbox" aria-expanded="false">
-                  <span class="cs-placeholder">Your Budget</span>
-                  <span class="cs-arrow"></span>
-                </div>
-                <ul class="cs-list" role="listbox">
-                  <li class="cs-option" data-value="Under $500">Under $500</li>
-                  <li class="cs-option" data-value="$500 - $1,000">$500 - $1,000</li>
-                  <li class="cs-option" data-value="$1,000 - $3,000">$1,000 - $3,000</li>
-                  <li class="cs-option" data-value="$3,000+">$3,000+</li>
-                </ul>
-                <select id="cf-budget" name="budget" class="cs-native">
-                  <option value="" selected disabled>Your Budget</option>
-                  <option value="Under $500">Under $500</option>
-                  <option value="$500 - $1,000">$500 - $1,000</option>
-                  <option value="$1,000 - $3,000">$1,000 - $3,000</option>
-                  <option value="$3,000+">$3,000+</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-12 form-item">
-              <label class="visually-hidden" for="cf-message">Your Message</label>
-              <textarea id="cf-message" name="message" rows="5" placeholder="Your Message" required class="form-control"></textarea>
-            </div>
-            <div class="col-12 form-item">
-              <button type="submit" class="btn btn-gradient w-100">Send Message</button>
-              <p id="formMsg" class="mt-3 mb-0 text-center"></p>
-            </div>
-          </div>
-        </form>
-      </div>
-
+      </form>
     </div>
 
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="site-footer">
-  <div class="container footer-inner">
+  <div class="container">
 
-    <span class="footer-brand">Riddhi <span class="gradient-text">Makwana</span></span>
+    <div class="foot-cta" data-aos="fade-up">
+      <h2>Let's build something <span class="gradient-text">great</span> together.</h2>
+      <a href="mailto:riddhimakwana.dev@gmail.com" class="mail-pill">
+        riddhimakwana.dev@gmail.com <span>&rarr;</span>
+      </a>
+    </div>
 
-    <ul class="footer-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="foot-bar">
+      <a class="brand" href="#home">
+        <span class="brand-mark">RM</span>
+        <span class="brand-name">Riddhi Makwana</span>
+      </a>
 
-    <span class="footer-copy">© 2026 Riddhi Makwana</span>
+      <ul class="foot-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <span class="foot-copy">&copy; 2026 Riddhi Makwana</span>
+    </div>
 
   </div>
 
-  <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
+  <a href="#home" class="back-to-top" aria-label="Back to top">&uarr;</a>
 </footer>
 
 <!-- Scripts -->

@@ -84,73 +84,31 @@ AOS.init();
   updateActiveLink();
 })();
 
+// Navbar: solid bar after scrolling + close mobile menu on link tap
+(function () {
+  var nav = document.querySelector(".site-nav");
+  if (nav) {
+    var onScroll = function () {
+      nav.classList.toggle("scrolled", window.scrollY > 40);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
+  var collapseEl = document.getElementById("navMenu");
+  if (collapseEl) {
+    Array.prototype.slice.call(collapseEl.querySelectorAll(".nav-link, .btn"))
+      .forEach(function (link) {
+        link.addEventListener("click", function () {
+          var instance = bootstrap.Collapse.getInstance(collapseEl);
+          if (instance && collapseEl.classList.contains("show")) instance.hide();
+        });
+      });
+  }
+})();
+
 // EmailJS init
 emailjs.init("TKaaoQG7mCRiv7PHV");
-
-// Custom dropdowns
-document.querySelectorAll(".cs-dropdown").forEach(function (dropdown) {
-  var control = dropdown.querySelector(".cs-control");
-  var placeholder = dropdown.querySelector(".cs-placeholder");
-  var nativeSelect = dropdown.querySelector(".cs-native");
-  var options = dropdown.querySelectorAll(".cs-option");
-  var defaultText = placeholder.textContent;
-
-  function closeDropdown() {
-    dropdown.classList.remove("open");
-    control.setAttribute("aria-expanded", "false");
-  }
-
-  function openDropdown() {
-    document.querySelectorAll(".cs-dropdown.open").forEach(function (other) {
-      if (other !== dropdown) {
-        other.classList.remove("open");
-        other.querySelector(".cs-control").setAttribute("aria-expanded", "false");
-      }
-    });
-    dropdown.classList.add("open");
-    control.setAttribute("aria-expanded", "true");
-  }
-
-  control.addEventListener("click", function (e) {
-    e.stopPropagation();
-    dropdown.classList.contains("open") ? closeDropdown() : openDropdown();
-  });
-
-  control.addEventListener("keydown", function (e) {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      dropdown.classList.contains("open") ? closeDropdown() : openDropdown();
-    }
-    if (e.key === "Escape") closeDropdown();
-  });
-
-  options.forEach(function (option) {
-    option.addEventListener("click", function (e) {
-      e.stopPropagation();
-      options.forEach(function (o) { o.classList.remove("selected"); });
-      option.classList.add("selected");
-      placeholder.textContent = option.dataset.value;
-      placeholder.classList.add("is-selected");
-      nativeSelect.value = option.dataset.value;
-      closeDropdown();
-    });
-  });
-
-  dropdown._reset = function () {
-    options.forEach(function (o) { o.classList.remove("selected"); });
-    placeholder.textContent = defaultText;
-    placeholder.classList.remove("is-selected");
-    nativeSelect.selectedIndex = 0;
-    closeDropdown();
-  };
-});
-
-document.addEventListener("click", function () {
-  document.querySelectorAll(".cs-dropdown.open").forEach(function (dropdown) {
-    dropdown.classList.remove("open");
-    dropdown.querySelector(".cs-control").setAttribute("aria-expanded", "false");
-  });
-});
 
 // Projects slider
 (function () {
@@ -255,9 +213,42 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     .then(() => {
       document.getElementById("formMsg").innerText = "Message sent successfully!";
       this.reset();
-      document.querySelectorAll(".cs-dropdown").forEach(function (d) { d._reset(); });
     })
     .catch(() => {
       document.getElementById("formMsg").innerText = "Error sending message!";
     });
 });
+
+// Hero: mouse parallax on background + profile card tilt
+(function () {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  var hero = document.querySelector(".hero");
+  var bg = hero && hero.querySelector(".hero-bg");
+  var aside = document.querySelector(".hero-aside");
+  var card = aside && aside.querySelector(".profile-card");
+
+  if (hero && bg) {
+    hero.addEventListener("mousemove", function (e) {
+      var r = hero.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - 0.5;
+      var y = (e.clientY - r.top) / r.height - 0.5;
+      bg.style.transform = "translate3d(" + (x * -20).toFixed(1) + "px, " + (y * -16).toFixed(1) + "px, 0)";
+    });
+    hero.addEventListener("mouseleave", function () {
+      bg.style.transform = "";
+    });
+  }
+
+  if (aside && card) {
+    aside.addEventListener("mousemove", function (e) {
+      var r = card.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - 0.5;
+      var y = (e.clientY - r.top) / r.height - 0.5;
+      card.style.transform = "perspective(900px) rotateY(" + (x * 7).toFixed(2) + "deg) rotateX(" + (y * -7).toFixed(2) + "deg)";
+    });
+    aside.addEventListener("mouseleave", function () {
+      card.style.transform = "";
+    });
+  }
+})();
